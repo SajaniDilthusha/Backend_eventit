@@ -1,0 +1,21 @@
+package com.example.demo1.entity;
+
+import lombok.AllArgsConstructor;
+import lombok.Data;
+import lombok.NoArgsConstructor;
+
+import javax.persistence.Entity;
+import javax.persistence.Id;
+
+@Entity
+@AllArgsConstructor
+@NoArgsConstructor
+@Data
+public class Customer {
+    @Id
+    private int customer_id;
+    private String fname;
+    private String lname;
+    private String email;
+    private String password;
+}
